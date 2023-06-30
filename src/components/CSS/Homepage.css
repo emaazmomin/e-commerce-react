@@ -1,0 +1,9 @@
+.images{    
+    width: 100%;
+    height: 355px;
+    object-fit: contain;
+}
+.product-card:hover{
+    padding: 0;
+background-color: rgb(208, 204, 204);
+}
