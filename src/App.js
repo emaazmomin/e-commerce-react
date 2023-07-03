@@ -1,6 +1,8 @@
 import "./App.css";
 import "../src/components/CSS/Homepage.css";
 import "../src/components/CSS/Details.css";
+import "../src/components/CSS/Reviews.css";
+import "../src/components/CSS/Ratings.css";
 import Navbar from "./components/Navbar/Navbar";
 import Homepage from "./components/Pages/Homepage/Homepage";
 import Details from "./components/Pages/Product Page/Details";
