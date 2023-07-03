@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Relateditems(props) {
-  const navigate = useNavigate;
+  const navigate = useNavigate();
   return (
     <>
       <div className="col-md-4">
@@ -10,6 +10,7 @@ export default function Relateditems(props) {
           className="card my-3 product-card"
           onClick={() => {
             navigate(`/details?src=${props.src}`);
+            window.scroll(0,0);
           }}
           id={props.id}
         >
