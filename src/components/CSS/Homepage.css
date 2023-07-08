@@ -1,9 +1,21 @@
-.images{    
+.images {
     width: 100%;
-    height: 355px;
+    height: 17rem;
     object-fit: contain;
 }
-.product-card:hover{
+.product-card{
+    height: 25rem;
+    /* width: 1rem; */
+}
+
+.product-card:hover {
     padding: 0;
-background-color: rgb(208, 204, 204);
+    background-color: rgb(208, 204, 204);
+    box-shadow: 6px 6px 6px rgba(199, 196, 196, 0.696);
+    height: 26rem;
+    /* box-shadow:  5px 5px 15px red; */
+}
+.green-background{
+    background-color: green;
+    color: white;
 }

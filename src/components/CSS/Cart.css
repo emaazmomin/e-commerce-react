@@ -1,0 +1,9 @@
+.cart-qty-div{
+    display: inline-flex;
+}
+.cart-qty-inp{
+    width: 1.8rem;
+}
+.cart-qty-btn{
+    width: 1.5rem;
+}

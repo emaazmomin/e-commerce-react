@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <nav className="navbar sticky-top navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/">
             Navbar
@@ -33,8 +33,8 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/cart" onClick={()=>console.log("clicked")}>
-                  Cart
+                <NavLink className="nav-link position-relative" to="/cart" onClick={()=>console.log("clicked")}>
+                  Cart<span class="position-absolute top-1 start-40 translate-middle badge rounded-pill bg-secondary">1 <span class="visually-hidden">unread messages</span></span>
                 </NavLink>
               </li>
               <li className="nav-item dropdown">

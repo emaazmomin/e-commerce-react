@@ -5,12 +5,12 @@ export default function Relateditems(props) {
   const navigate = useNavigate();
   return (
     <>
-      <div className="col-md-4">
+      <div className="col-6 col-md-2">
         <div
           className="card my-3 product-card"
           onClick={() => {
-            navigate(`/details?src=${props.src}`);
             window.scroll(0,0);
+            navigate(`/details?src=${props.src}`);
           }}
           id={props.id}
         >

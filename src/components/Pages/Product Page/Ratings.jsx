@@ -5,8 +5,7 @@ export default function Ratings() {
   return (
     <>
       <h1 className="text-center">Ratings & Reviews</h1>
-      <div>
-      </div>
+      <div></div>
       <div className="container text-center mt-5">
         <hr />
         <h2 className="mb-4">Ratings</h2>
@@ -17,19 +16,19 @@ export default function Ratings() {
           </div>
 
           <div className="col">
-            <div className="stars">
+            <div className="stars border">
               <div className="s5-star"></div>
             </div>
-            <div className="stars">
+            <div className="stars border">
               <div className="s4-star"></div>
             </div>
-            <div className="stars">
+            <div className="stars border">
               <div className="s3-star"></div>
             </div>
-            <div className="stars">
+            <div className="stars border">
               <div className="s2-star"></div>
             </div>
-            <div className="stars">
+            <div className="stars border">
               <div className="s1-star"></div>
             </div>
           </div>
@@ -47,10 +46,10 @@ export default function Ratings() {
       <hr />
       <div className="container">
         <h2 className="text-center mt-5">Reviews</h2>
-       <Reviews/>
-       <Reviews/>
-       <Reviews/>
-       <Reviews/>
+        <Reviews />
+        <Reviews />
+        <Reviews />
+        <Reviews />
       </div>
     </>
   );

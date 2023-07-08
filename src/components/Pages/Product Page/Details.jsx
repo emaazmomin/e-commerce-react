@@ -5,12 +5,11 @@ import Review from "./Ratings";
 
 export default function Details(props) {
   //getting the id of route
-  const [src, setsrc] = useSearchParams();
+  const [src] = useSearchParams();
   return (
     <>
-      <div className="container text-center detail-div mt-5">
-        <div className="my-5 detail-img">
-          {/* <img src={src.get("src")} className="img-fluid rounded-top" alt="" /> */}
+      <div className=" text-center detail-div">
+        <div className="detail-img">
 
           <div id="carouselExampleIndicators" className="carousel slide mt-5 border">
             <div className="carousel-indicators">
@@ -74,9 +73,9 @@ export default function Details(props) {
         </div>
 
         <div className="info-div px-4">
-          <h2>Heading of this</h2>
+          <h1>Heading of this</h1>
           <hr />
-          <p className="text-start">
+          <p className="text-start fs-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
             veritatis voluptatibus laudantium consequatur blanditiis officia
             accusantium quo quae, corporis maxime ducimus labore dolore, sequi
@@ -126,7 +125,7 @@ export default function Details(props) {
         </div>
       </div>
       <hr />
-      <div className="review-div container">
+      <div className="review-div ">
         <Review />
       </div>
       <hr />
