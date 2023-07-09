@@ -1,0 +1,6 @@
+.help-question-div{
+    box-shadow: 3px 3px 3px rgb(147, 147, 147);
+}
+.help-question-div:hover{
+    background-color: rgb(225, 222, 222);
+}

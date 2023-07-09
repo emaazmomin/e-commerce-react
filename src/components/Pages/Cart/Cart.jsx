@@ -4,7 +4,7 @@ import Tablerows from "./Tablerows";
 export default function Cart() {
   return (
     <>
-      <div className="container">
+      <div className="mx-2">
         <table className="table table-striped">
           <thead>
             <tr>

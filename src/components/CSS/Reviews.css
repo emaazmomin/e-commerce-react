@@ -1,3 +1,4 @@
 .customer-comments-div:hover{
     background-color: rgb(225, 222, 222);
+    box-shadow: 3px 3px 3px grey;
 }

@@ -37,36 +37,10 @@ export default function Navbar() {
                   Cart<span class="position-absolute top-1 start-40 translate-middle badge rounded-pill bg-secondary">1 <span class="visually-hidden">unread messages</span></span>
                 </NavLink>
               </li>
-              <li className="nav-item dropdown">
-                {/* <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a> */}
-                {/* <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul> */}
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/help">
+                  Help
+                </NavLink>
               </li>
             </ul>
             <form className="d-flex" role="search">
