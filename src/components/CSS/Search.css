@@ -1,0 +1,8 @@
+.searched-image-div img{
+    width: 20rem;
+    height: 12rem;
+    object-fit: contain;
+}
+.result-div{
+    height: 14rem;
+}
