@@ -34,7 +34,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link position-relative" to="/cart" onClick={()=>console.log("clicked")}>
-                  Cart<span class="position-absolute top-1 start-40 translate-middle badge rounded-pill bg-secondary">1 <span class="visually-hidden">unread messages</span></span>
+                  Cart<span className="position-absolute top-1 start-40 translate-middle badge rounded-pill bg-secondary">1 <span className="visually-hidden">unread messages</span></span>
                 </NavLink>
               </li>
               <li className="nav-item">

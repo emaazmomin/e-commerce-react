@@ -1,18 +1,26 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useNavigate} from "react-router-dom";
 
 export default function Tablerows(props) {
   const [qty, setQty] = useState(props.qty);
   const navigate = useNavigate();
 
-  const minus = () => {
-    if (qty > 1) {
-      setQty(qty - 1);
-    }
-  };
-  const plus = () => {
-    setQty(qty + 1);
-  };
+  // const minus = () => {
+  //   if (qty > 1) {
+  //     setQty(qty - 1);
+  //   }
+  // };
+  // const plus = () => {
+  //   setQty(qty + 1);
+  // };
+  useEffect(() => {
+   
+  }, []);
+
+  useEffect(() => {
+   
+  }, [])
+  
 
   return (
     <>
@@ -25,7 +33,7 @@ export default function Tablerows(props) {
         </td>
         <td>
           <div className="cart-qty-div border">
-            <button className="cart-qty-btn p-0" onClick={minus}>
+            <button className="cart-qty-btn p-0" onClick={()=>{console.log(props)}}>
               -
             </button>
             <input
@@ -35,7 +43,7 @@ export default function Tablerows(props) {
               value={qty}
               onChange={(e) => setQty(e.target.value)}
             />
-            <button className="cart-qty-btn" onClick={plus}>
+            <button className="cart-qty-btn">
               +
             </button>
           </div>

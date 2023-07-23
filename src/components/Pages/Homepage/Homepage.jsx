@@ -1,34 +1,69 @@
-import React from "react";
+import React, { useContext,useEffect } from "react";
 import Items from "./Items";
 import Categorysection from "./Categorysection";
+import { ProductApi } from "../../../context/porductApi/Productcontext";
 
 export default function Homepage() {
+  const d = useContext(ProductApi);
+  useEffect(() => {
+    d.getData();
+  }, []);
+
   return (
     <>
       <div className="">
         {/* <h2 className="text-center">Categories</h2> */}
         {/* <div className="mt-2 mx-3"> */}
-          <div className="row mt-3">
-            <Categorysection src="https://rukminim2.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" catname="Groceries" />
-            <Categorysection src="https://rukminim2.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" catname="Mobiles" />
-            <Categorysection src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png?q=100" catname="Fashion"  />
-            <Categorysection src="https://rukminim2.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" catname="Computers & Accessories" />
-            <Categorysection src="https://rukminim2.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" catname="Home Decors" />
-            <Categorysection src="https://rukminim2.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" catname="Appliances" />
-            <Categorysection src="https://rukminim2.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" catname="Kid's Zone" />
-          </div>
+        <div className="row mt-3" style={{width:"100%"}}>
+          <Categorysection
+            src="https://rukminim2.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
+            catname="Groceries"
+          />
+          <Categorysection
+            src="https://rukminim2.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+            catname="Mobiles"
+          />
+          <Categorysection
+            src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png?q=100"
+            catname="Fashion"
+          />
+          <Categorysection
+            src="https://rukminim2.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
+            catname="Computers & Accessories"
+          />
+          <Categorysection
+            src="https://rukminim2.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
+            catname="Home Decors"
+          />
+          <Categorysection
+            src="https://rukminim2.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+            catname="Appliances"
+          />
+          <Categorysection
+            src="https://rukminim2.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+            catname="Kid's Zone"
+          />
+        </div>
         {/* </div> */}
 
         <hr />
         <h2 className="text-center">Trending Products</h2>
         <div className="mt-2 mx-3">
           <div className="row">
-            <Items
+            {d.data.map((data,i) => {
+              return <Items
+                key={i}
+                src={data.url}
+                price={data.price}
+                id={data.pid}
+              />;
+            })}
+
+            {/* <Items
               src="https://m.media-amazon.com/images/I/81vcTfrJQxL._UY741_.jpg"
               price="599"
               id="1"
-            />
-
+            /> */}
             <Items
               src="https://m.media-amazon.com/images/I/81RzcJRbA5L._SY450_.jpg"
               price="9999"
